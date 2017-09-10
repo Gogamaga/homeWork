@@ -23,10 +23,24 @@
 
 // Task#3
 
-do{
-  var login = prompt('Login Please');
-}while(login != 'admin'){
-  if(login == 'admin'){
-  console.log('Hello Admin');
-}  
-}
+// do{
+//   var login = prompt('Login Please');
+// }while(login != 'admin'){
+//   if(login == 'admin'){
+//   console.log('Hello Admin');
+// }
+// }
+
+// Task #4
+
+// do{
+//   var num = prompt('Please Number');
+//   if(num == null){
+//     console.log('Buy');
+//     break;
+//   }
+// }while(num < 100){
+//  if(num >= 100){
+//    console.log('Thanks');
+//  }
+// }
