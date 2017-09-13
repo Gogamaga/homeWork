@@ -1,46 +1,29 @@
 // TAsk #1
-// for(var j = 1; j<=100; j++){
-// 	if(j%5 == 0){
-// 		console.log(j);
-// 	}
-// }
-
-// var i = 1;
-// while(i <= 100){
-//   if(i % 5 == 0){
-//     console.log(i);
+// function minValue(min, max) {
+//   var inf = Number.POSITIVE_INFINITY;
+//   for(var i = 0; i < arguments.length; i++){
+//     if (arguments[i]< inf) {
+//       inf = arguments[i];
+//     }
 //   }
-//   i++;
+//   return inf;
+// }
+// var a = minValue(1,3);
+// console.log(a);
+
+//Task #2
+// var arr = [1,3,6,9,12,15,45]
+// function range(min, max, arr){
+//   var newArr = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     var arrValue = arr[i];
+//     if (arrValue >= min && arrValue <= max) {
+//       newArr.push(arrValue);
+//     }
+//   }
+//   return newArr;
 // };
- //Task #2
-// var min = prompt('min');
-// var max = prompt('max');
-// for(var j = min; j <= max; j++){
-// 	if(j % 2 != 0){
-// 	console.log(j);
-// 	}
-// }
+// var a = range(1,20,arr);
+// console.log(a);
 
-// Task#3
-
-// do{
-//   var login = prompt('Login Please');
-// }while(login != 'admin'){
-//   if(login == 'admin'){
-//   console.log('Hello Admin');
-// }
-// }
-
-// Task #4
-
-// do{
-//   var num = prompt('Please Number');
-//   if(num == null){
-//     console.log('Buy');
-//     break;
-//   }
-// }while(num < 100){
-//  if(num >= 100){
-//    console.log('Thanks');
-//  }
-// }
+//   # TAsk #3
