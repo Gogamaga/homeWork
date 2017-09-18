@@ -11,7 +11,7 @@ function edit(str){
   var str = arr.join('');
   return str;
 };
-// Task  Version 2
+// Task #1 Version 2
 function edirString(str){
  var ind = 0;
   while(ind != -1){
