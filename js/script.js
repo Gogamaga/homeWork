@@ -1,45 +1,35 @@
-// TAsk #1
-// function minValue(min, max) {
-//   var inf = Number.POSITIVE_INFINITY;
-//   for(var i = 0; i < arguments.length; i++){
-//     if (arguments[i] < inf) {
-//       inf = arguments[i];
-//     }
-//   }
-//   return inf;
-// }
-// var a = minValue(1,3);
-// console.log(a);
 
-function minVal(min, max) {
-    if (min < max) {
-      return min;
-    }
-      return max;
+//   Task #1  Version 1
+var str = 'me-sed-gef-gdgs-rynr';
+function edit(str){
+  var arr = str.split(/\-/g,);
+  for(var i = 1; i < arr.length; i++){
+    var newstr = arr[i];
+    var edidStr = newstr[0].toUpperCase() + newstr.slice(1);
+    arr[i] = edidStr;
+  }
+  var str = arr.join('');
+  return str;
 };
-console.log(minVal(1,-3));
-//Task #2
-// var arr = [1,3,6,9,12,15,45]
-// function range(min, max, arr){
-//   var newArr = [];
-//   for (var i = 0; i < arr.length; i++) {
-//     var arrValue = arr[i];
-//     if (arrValue >= min && arrValue <= max) {
-//       newArr.push(arrValue);
-//     }
-//   }
-//   return newArr;
-// };
-// var a = range(1,20,arr);
-// console.log(a);
+// Task  Version 2
+function edirString(str){
+ var ind = 0;
+  while(ind != -1){
+    ind = str.indexOf('-');
+    var strUper = str[ind + 1].toUpperCase();
+    str = str.replace(str[ind + 1],strUper);
+    str = str.replace('-', '');
+  }
+  return str;
+}
+console.log(edirString(str));
+// Task #2
+var obj = {};
 
-//   # TAsk #3
-// function power(x, n) {
-//   var pow = x;
-//   for (var i = 0; i < n -1; i++) {
-//      pow *= x;
-//     }
-//     console.log(pow);
-// }
-// power(3,3);
-// console.log(Math.pow(3,3));
+function newObj(num){
+  for(var i = 1; i <= num; i++){
+    obj['key' + i]= 'value' + i;
+    }
+    return obj;
+}
+console.log(newObj(5));
